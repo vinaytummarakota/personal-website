@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vinay Tummarakota</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <title></title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="blue-border">
+        <div class="triangle-topright">
+        </div>
+        <h2 class="func-title">def who_am_i():</h2>
+        <div class="triangle-bottomleft">
+        </div>
+      </div>
+      <img src="images/left-brace.png" class="left-brace" />
+      <img src="images/left-brace.png" class="right-brace" />
+      <div class="title">
+        <table>
+          <tr>
+            <td>
+              <div class="marquee-container">
+                <img src="images/news.png" class="marquee" />
+              </div>
+            </td>
+            <td>
+              <img class="profile" src="images/profile.jpg" alt="Vinay Tummarakota" />
+              <h1>Hi! I'm Vinay Tummarakota</h1>
+              <h4>- aspiring software developer & political commentator -</h4>
+            </td>
+            <td>
+              <div class="marquee-container">
+                <img src="images/code.gif" alt="code" class="marquee" />
+              </div>
+            </td>
+          </tr>
+        </table>
+        <p class="title-icons">
+          <i class="far fa-id-card fa-3x title-buttons"></i>
+          <a href="#education" class="title-link"><i class="fas fa-university fa-3x title-buttons"></i></a>
+          <a href="#places" class="title-link"><i class="fas fa-briefcase fa-3x title-buttons"></i></a>
+          <a href="#projects" class="title-link"><i class="fas fa-laptop-code fa-3x title-buttons"></i></a>
+          <a href="#extracurriculars" class="title-link"><i class="far fa-thumbs-up fa-3x title-buttons"></i></a>
+          <a href="#footer" class="title-link"><i class="fas fa-hashtag fa-3x title-buttons"></i></a>
+        </p>
+      </div>
+      <div class="blue-border">
+        <div class="triangle-topright">
+        </div>
+        <div class="triangle-bottomleft">
+        </div>
+      </div>
+    </div>
+    <div id="education">
+      <h2>Where Have I Learned?</h2>
+      <img src="images/chip.png" class="chip-left"/>
+      <img src="images/chip.png" class="chip-right"/>
+      <button id="btn-imsa"><img src="images/imsa.jpg" alt="Illinois Mathematics and Science Academy" class="school-logo" /></button>
+      <!-- The Modal -->
+      <div id="modal-imsa" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Illinois Mathematics and Science Academy</h2>
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <table>
+              <tr>
+                <td><img src="images/imsa_real.jpg" alt="IMSA School" class="school-pic"/></td>
+                <td>
+                  <h2 class="school-header">Relevant Coursework</h2><br />
+                  <ul>
+                    <li>Object-Oriented Programming (Java)</li>
+                    <li>Computer Science Inquiry (Python, HTML, CSS)</li>
+                    <li>Abstract Algebra</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <h5><em>IMSA's mission is "to ignite and nurture creative, ethical, scientific minds that advance the human condition."</em></h5>
+          </div>
+        </div>
+      </div>
+      <button id="btn-rice"><img src="images/rice.png" alt="Rice University" class="school-logo" /></button>
+      <!-- The Modal -->
+      <div id="modal-rice" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Rice University</h2>
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <table>
+              <tr>
+                <td><img src="images/rice_real.jpg" alt="Rice University Lovett Hall" class="school-pic"/></td>
+                <td>
+                  <h2 class="school-header">Relevant Coursework</h2><br />
+                  <ul>
+                    <li>Algorithmic Thinking (Python)</li>
+                    <li>Computational Thinking (Python)</li>
+                    <li>Probability and Statistics for Data Science (R)</li>
+                    <li>Fundamentals of Computer Engineering (C)</li>
+                    <li>Ordinary Differential Equations & Linear Algebra</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <h5><em>"Rice University aspires to pathbreaking research, unsurpassed teaching, and contribution to the betterment of our world ...
+              by cultivating a diverse community of learning and discovery that produces leaders across the spectrum of human endeavor."</em></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="places" class="white">
+      <h2>Where Have I Been?</h2>
+      <div class="container">
+        <div class="row job">
+          <div class="col-lg-3">
+            <img class="job-image" src="images/lake.png" alt="Rice University" />
+          </div>
+          <div class="col-lg-6 job-description">
+            <h4 class="job-header">Rice University Climate, Water, and Energy Lab</h4>
+            <h6 class="job-subheader">Research Intern | Houston, TX | Summer 2020</h6>
+            <p> Proxy System Models (PSM) capture the ways in which archives (lake sediments, ice cores, corals)
+                record changes in the climate. To expand use as a research and teaching tool, I collaborated with a team
+                of Computer Science students to build a Python GUI that runs a lake sediment PSM in
+                Fortran and visualizes output data. Through developing the GUI, I learned how to create an effective user interface,
+                use github branches to simultaneously collaborate with team members, and utilize Python libraries such as tkinter,
+                pandas, and matplotlib.
+          </p>
+          </div>
+          <div class="col-lg-3">
+            <img src="images/lake_bubbles.png" alt="Python" class="bubbles"/>
+          </div>
+        </div>
+        <div class="row job">
+          <div class="col-lg-3 ">
+            <img class="job-image" src="images/fermilab.png" alt="fermilab" />
+          </div>
+          <div class="col-lg-6 job-description">
+            <h4 class="job-header">Fermi National Accelerator Laboratory</h4>
+            <h6 class="job-subheader">Research Intern | Batavia, IL | Aug 2017 - May 2019</h6>
+            <p>The Standard Model of Particle Physics describes three fundamental forces and the
+                set of elementary particles which constitute the universe. But what if at a certain energy scale, the Standard Model's "elementary"
+                particles can be shown to be composed of more fundamental particles? Using C++ and ROOT (a data analysis framework), I created a Bayesian
+                Markov Chain Monte-Carlo (MCMC) Calculator which estimates limits on the energy scale at which the effects
+                of compositeness are observable. I also consolidated ROOT documentation to eliminate reliance on resources scattered through ROOT forums.
+          </p>
+          </div>
+          <div class="col-lg-3">
+            <img src="images/fermilab_bubbles.png" alt="C++" class="bubbles"/>
+          </div>
+        </div>
+        <div class="row job">
+          <div class="col-lg-3">
+            <img class="job-image" src="images/caterpillar.png" alt="caterpillar" />
+          </div>
+          <div class="col-lg-6 job-description">
+            <h4 class="job-header">Caterpillar Inc.</h4>
+            <h6 class="job-subheader">Data Analytics Intern | Peoria, IL | Summer 2018</h6>
+            <p >To optimize interactions with Caterpillar's Parts and Manuals Website (SISWEB),
+                I utilized an Oracle database and Microsoft PowerBI to design self-updating,
+                interactive visualizations of key metrics related to user activity. The data-driven insights derived
+                from these visualizations allowed Caterpillar business teams
+                to maintain and renovate SISWEB by accounting for shifts in user activity.
+                Developing the dashboards to satisfy new business needs while simultaneously
+                ensuring the integrity of the database helped me understand the importance
+                of clear communication between technical and business teams.
+                   </p>
+          </div>
+          <div class="col-lg-3">
+            <img src="images/cat_bubbles.png" alt="Power BI" class="bubbles" />
+          </div>
+      </div>
+    </div>
+    <div id="projects" class="blue">
+      <div class="triangle-topright">
+      </div>
+      <h2>What Have I Built?</h2>
+      <div id="carouselExampleControls" class="carousel slide projects" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://github.com/benfirullo/SmoothCriminals"><img class="project-image" src="images/deep.png" alt="First slide"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/rknightly/rice-datathon"><img class="project-image" src="images/keras.png" alt="Second slide"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/sst7/Sibling_Program_Algorithm"><img class="project-image" src="images/sibling.gif" alt="Third slide"></a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="triangle-bottomleft">
+      </div>
+    </div>
+    <div id="extracurriculars" class="white">
+      <h2>What Do I Like?</h2>
+      <div class="container club-container">
+        <div class="row">
+          <div class="col-lg-4 club-gray club">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img class="club-image" src="images/unboxing_politics.png" alt="Unboxing Politics">
+                </div>
+                <div class="flip-box-back">
+                  <h4>Unboxing Politics</h4>
+                  <p>I created <a href="https://www.youtube.com/channel/UCLeUeT_RXyQhX4RGxeYy3kg/videos">Unboxing Politics</a> as a way to share my views on prominent
+                    political issues (systemic racism, wealth inequality, foreign policy, healthcare, and more)
+                    with a greater audience. Creating this YouTube channel has taught me the
+                    importance of verifying the credibility of sources, analyzing
+                    competing arguments for different political positions, and also changing
+                    my mind when encountering new information and ideas. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 club-darkgray club">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img class="club-image" src="images/phils.png" alt="Rice Philharmonics">
+                </div>
+                <div class="flip-box-back">
+                  <h4>Rice Philharmonics</h4>
+                  <p>The <a href="http://ricephilharmonics.com/about/">Rice Philharmonics</a> (aka "the Phils") is Rice University's
+                      Premier Co-Ed A Cappella Group! We perform pop hits, soulful tunes, and
+                      a range of other musical genres at events across Texas. I love beatboxing
+                      and singing tenor for the Phils, and overall, joining the Phils has allowed my knowledge and love for music to flourish!
+                      We also recently released our album <a href="https://open.spotify.com/album/54arvWxammLMLg5bUUlq4I?si=QV85juEQQmWXRUNy8zl96w">Philos</a> and are donating royalties to
+                      Indivisible Houston. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 club club-gray">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img class="club-image" src="images/rds.png" alt="Rice Data Science Club">
+                </div>
+                <div class="flip-box-back">
+                  <h4>Rice Data Science Club</h4>
+                  <p><a href="https://datasci.rice.edu/">Rice DataSci</a> (RDS) hosts workshops, panels, and the annual Rice datathon
+                      to provide students with knowledge of data science tools. I'm extremely grateful for
+                      the mentorship of RDS upperclassmen who have helped me gain experience working Python data analytics libraries
+                      and provided me with advice on how to pursue career opportunities in Data Science. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="blue">
+      <div class="triangle-topright">
+      </div>
+      <h2>Let's Connect.</h2>
+      <p><a href="https://www.facebook.com/profile.php?id=100013432846705"><i class="fab fa-facebook-square fa-3x"></i></a>
+        <a href="https://www.instagram.com/vinay_tummarakota/"><i class="fab fa-instagram-square fa-3x"></i></a>
+        <a href="https://github.com/sst7"><i class="fab fa-github-square fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/srivinay-tummarakota-5966281aa/"><i class="fab fa-linkedin fa-3x"></i></a></p>
+      <div class="triangle-bottomleft">
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c8984d9940.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

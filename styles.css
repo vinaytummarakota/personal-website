@@ -1,0 +1,491 @@
+/*Universal Changes*/
+
+@media screen and (max-width: 1400px) {
+  .header {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .marquee {
+    display: none;
+  }
+  .marquee-container {
+    display: none;
+  }
+  .chip-left {
+    display: none;
+  }
+  .chip-right {
+    display: none;
+  }
+  .header {
+    height: 500px;
+  }
+}
+
+body {
+  text-align: center;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.blue {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+.blue-border {
+  background-color: #003366;
+  position: relative;
+  z-index: 3;
+  padding: 0;
+}
+
+p {
+  font-family: "Lora", serif;
+  font-size: .9rem;
+}
+
+/*Header and Headings*/
+.header {
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.title {
+  background-color: #FFFFFF;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 10px;
+  top: 80px;
+}
+
+.title-buttons {
+  padding: 15px;
+  border-radius: 10%;
+}
+
+.title-buttons:hover {
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+}
+
+.func-title {
+  transform: rotate(4deg);
+  font-family: "Courier New", serif;
+  color: white;
+  text-align: left;
+  font-size: 3rem;
+  padding: 0 0 0 20px;
+}
+
+.left-brace {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  height: 350px;
+  width: 100px;
+  top: 275px;
+}
+
+.right-brace {
+  position: absolute;
+  right: 0;
+  transform: scaleX(-1);
+  z-index: 1;
+  height: 350px;
+  width: 100px;
+  top: 275px;
+}
+
+.title table {
+  margin: auto;
+  position: relative;
+  bottom: 75px;
+}
+
+.title-icons {
+  position: relative;
+  bottom: 75px;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.marquee-container {
+    width: 18em;
+    height: 15em;
+    margin: 1em auto;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.marquee {
+    top: 0em;
+    width: 300px;
+    position: relative;
+    box-sizing: border-box;
+    animation: marquee 16s linear infinite;
+}
+
+
+@keyframes marquee {
+    0%   { top:   8em }
+    100% { top: -10em }
+}
+
+h1 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h4 {
+  color: #000000;
+  font-family: "Lora", serif;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 40px 0;
+}
+
+h6 {
+  font-family: "Lora", serif;
+}
+
+.title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/*Education*/
+
+#education {
+  margin-bottom: 100px;
+}
+
+.school-logo {
+  width: 250px;
+  border: 5px solid black;
+  border-radius: 10%;
+  background-color: black;
+  margin: 15px;
+}
+
+.school-logo:hover {
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+}
+
+#btn-imsa {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 2;
+}
+
+#btn-rice {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 2;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  text-align: left;
+  padding: 0;
+  border: 1px solid #888;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  z-index: -3;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #003366;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #003366;
+  border: 3px solid #003366;
+  color: white;
+}
+
+.modal-footer h4 {
+  color: white;
+}
+
+.school-pic {
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 10%;
+  display: inline-block;
+  margin: 15px;
+}
+
+.school-header {
+  display: inline-block;
+  margin-bottom: -25px;
+}
+
+.school-description {
+  display: inline-block;
+}
+
+.chip-left {
+  position: absolute;
+  left: 0;
+  width: 450px;
+}
+
+.chip-right {
+  position: absolute;
+  right: 0;
+  width: 450px;
+  transform: scaleX(-1);
+}
+
+/*Places*/
+#places {
+  position: relative;
+  z-index: 1;
+}
+
+.job {
+  padding-bottom: 30px;
+  opacity: 0;
+  transform: translate(0, 10px);
+  transition: all 3.5s;
+}
+
+.job-fade {
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+.job-description {
+  text-align: left;
+}
+
+.job-image {
+  height: 175px;
+  border: 5px solid black;
+  border-radius: 10%;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+.bubbles {
+  height: 175px;
+}
+
+.job-header {
+  font-weight: bold;
+}
+
+.job-subheader {
+  color: #003366;
+  font-weight: bold;
+}
+
+
+/*Projects*/
+
+#projects {
+  position: relative;
+  z-index: 2;
+}
+
+.project-image {
+  height: 360px;
+  margin: auto;
+}
+
+.triangle-bottomleft {
+  width: 0;
+  height: 0;
+  position: relative;
+  z-index: 6;
+  border-bottom: 100px solid #FFFFFF;
+  border-right: 100vw solid transparent;
+}
+
+.triangle-topright {
+  width: 0;
+  height: 0;
+  position: relative;
+  z-index: 6;
+  border-top: 100px solid #2A9DF4;
+  border-left: 100vw solid transparent;
+}
+
+/*Extracurriculars*/
+
+.club-image {
+  height: 200px;
+  margin: 30px 0;
+}
+
+.channel {
+  border-radius: 10%;
+}
+
+.club {
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.club h2 {
+  padding: 15px 0;
+}
+
+.club h4 {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.club p {
+  text-align: left;
+}
+
+.club-gray {
+  background-color:#D3D3D3;
+  color: black;
+  height: 300px;
+}
+
+.club-darkgray {
+  background-color:#585858;
+  color: white;
+  height: 300px;
+}
+
+.club-darkgray h4 {
+  color: white; 
+}
+
+.flip-box {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  height: 300px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+/* Style the back side */
+.flip-box-back {
+  transform: rotateY(180deg);
+}
+/*Footer*/
+#footer .fab {
+  color: #FFFFFF;
+  padding: 0 15px 15px 15px;
+}
+
+#footer p {
+  margin-bottom: 0;
+}
