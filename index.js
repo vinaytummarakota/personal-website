@@ -1,14 +1,14 @@
 // Get the modal
-var i_modal = document.getElementById("modal-imsa");
-var r_modal = document.getElementById("modal-rice");
+var i_modal = $("#modal-imsa");
+var r_modal = $("#modal-rice");
 
 // Get the button that opens the modal
-var btnIMSA = document.getElementById("btn-imsa");
-var btnRice = document.getElementById("btn-rice");
+var btnIMSA = $("#btn-imsa");
+var btnRice = $("#btn-rice");
 
 // Get the <span> element that closes the modal
-var i_span = document.getElementsByClassName("close")[0];
-var r_span = document.getElementsByClassName("close")[1];
+var i_span = $(".close")[0];
+var r_span = $(".close")[1];
 
 //Global variable that stores which button was activated
 var active_btn = null;
@@ -52,3 +52,15 @@ $(document).on("scroll", function() {
     }
   }
 })
+
+// When window size is small, loop through buttons and decrease size and padding
+$(window).resize(function(){
+  if ($(window).width() <= 540) {
+    $(".title-buttons").removeClass("fa-3x").addClass("fa-2x");
+    $(".title-buttons").css("padding", "5px");
+  }
+  else {
+    $(".title-buttons").removeClass("fa-2x").addClass("fa-3x");
+    $(".title-buttons").css("padding", "15px");
+  }
+});

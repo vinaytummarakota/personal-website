@@ -1,11 +1,5 @@
 /*Universal Changes*/
 
-@media screen and (max-width: 1400px) {
-  .header {
-    height: 400px;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .marquee {
     display: none;
@@ -27,6 +21,24 @@
 @media screen and (max-width: 991px) {
   .bubbles {
     display: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .left-brace {
+    display: none;
+  }
+  .right-brace {
+    display: none;
+  }
+  .project-image {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-image {
+    height: 160px;
   }
 }
 
@@ -60,11 +72,9 @@ p {
 /*Header and Headings*/
 .header {
   background-color: #FFFFFF;
-  height: 100%;
   width: 100%;
-  height: 940px; 
+  height: auto;
   width: 100%;
-  overflow: hidden;
 }
 
 .title {
@@ -383,7 +393,6 @@ h6 {
 }
 
 .project-image {
-  height: 360px;
   margin: auto;
 }
 
