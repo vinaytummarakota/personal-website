@@ -1,10 +1,10 @@
 // Get the modal
-var i_modal = $("#modal-imsa");
-var r_modal = $("#modal-rice");
+const i_modal = $("#modal-imsa");
+const r_modal = $("#modal-rice");
 
 // Get the button that opens the modal
-var btnIMSA = $("#btn-imsa");
-var btnRice = $("#btn-rice");
+const btnIMSA = $("#btn-imsa");
+const btnRice = $("#btn-rice");
 
 //Global variable that stores which button was activated
 var active_btn = null;
@@ -12,11 +12,12 @@ var active_btn = null;
 // When the user clicks the button, open the modal
 btnIMSA.click(function() {
   i_modal.css("display","block");
-  active_btn = r_modal;
+  active_btn = i_modal;
 });
 
 btnRice.click(function() {
   r_modal.css("display","block");
+  active_btn = r_modal;
 });
 
 // When the user clicks on <span> (x), close the modal
@@ -37,11 +38,11 @@ $(window).click(function(event) {
 });
 
 $(document).scroll(function() {
-  var pageTop = $(document).scrollTop()
-  var pageBottom = pageTop + $(window).height()
-  var tags = $(".job")
-  for (var i = 0; i<tags.length; i++) {
-    var tag = tags[i]
+  const pageTop = $(document).scrollTop()
+  let pageBottom = pageTop + $(window).height()
+  const tags = $(".job")
+  for (let i = 0; i<tags.length; i++) {
+    let tag = tags[i]
     if ($(tag).offset().top < (3*pageBottom+pageTop)/4) {
       $(tag).addClass("job-fade")
     }
