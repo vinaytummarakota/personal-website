@@ -49,16 +49,16 @@ $(document).scroll(function() {
   }
 });
 
-// When window size is small, loop through buttons and decrease size and padding
-$(window).on("load", function(){
-  let width = $(window).width();
-  if (width <= 800) {
-    if (width <=540) {
+function resize_website(){
+  if ($(window).width() <= 800) {
+    if ($(window).width() <=540) {
       $(".title-buttons").removeClass("fa-3x").addClass("fa-2x");
       $(".title-buttons").css("padding", "5px");
     }
-    $(".title-buttons").removeClass("fa-2x").addClass("fa-3x");
-    $(".title-buttons").css("padding", "15px");
+    else {
+      $(".title-buttons").removeClass("fa-2x").addClass("fa-3x");
+      $(".title-buttons").css("padding", "15px");
+    }
     $(".school-pic").css("display", "none");
     $(".modal-content").css("width", "100%");
   }
@@ -66,22 +66,9 @@ $(window).on("load", function(){
     $(".school-pic").css("display", "inline-block");
     $(".modal-content").css("width", "800px");
   }
-});
+}
 
-$(window).resize(function(){
-  let width = $(window).width();
-  if (width <= 800) {
-    if (width <=540) {
-      $(".title-buttons").removeClass("fa-3x").addClass("fa-2x");
-      $(".title-buttons").css("padding", "5px");
-    }
-    $(".title-buttons").removeClass("fa-2x").addClass("fa-3x");
-    $(".title-buttons").css("padding", "15px");
-    $(".school-pic").css("display", "none");
-    $(".modal-content").css("width", "100%");
-  }
-  else {
-    $(".school-pic").css("display", "inline-block");
-    $(".modal-content").css("width", "800px");
-  }
-});
+// When window size is small, loop through buttons and decrease size and padding
+$(window).on("load", resize_website);
+
+$(window).resize(resize_website);
