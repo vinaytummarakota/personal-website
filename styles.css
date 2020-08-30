@@ -1,16 +1,17 @@
 /*Universal Changes*/
-
+@media screen and (max-width: 1475px) {
+  .chip-left {
+    display: none;
+  }
+  .chip-right {
+    display: none;
+  }
+}
 @media screen and (max-width: 1200px) {
   .marquee {
     display: none;
   }
   .marquee-container {
-    display: none;
-  }
-  .chip-left {
-    display: none;
-  }
-  .chip-right {
     display: none;
   }
   .header {
@@ -216,7 +217,7 @@ h6 {
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
 }
 
-#btn-imsa {
+.btn-modal {
   background-color: transparent;
   border: none;
   outline: none;
@@ -224,12 +225,8 @@ h6 {
   z-index: 2;
 }
 
-#btn-rice {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  position: relative;
-  z-index: 2;
+.btn-modal:focus {
+  outline: none; 
 }
 
 /* The Modal (background) */

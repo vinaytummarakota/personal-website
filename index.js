@@ -1,9 +1,11 @@
 // Get the modal
 const i_modal = $("#modal-imsa");
+const l_modal = $("#modal-lab");
 const r_modal = $("#modal-rice");
 
 // Get the button that opens the modal
 const btnIMSA = $("#btn-imsa");
+const btnLab = $("#btn-lab");
 const btnRice = $("#btn-rice");
 
 //Global variable that stores which button was activated
@@ -13,6 +15,11 @@ var active_btn = null;
 btnIMSA.click(function() {
   i_modal.css("display","block");
   active_btn = i_modal;
+});
+
+btnLab.click(function() {
+  l_modal.css("display", "block");
+  active_btn = l_modal;
 });
 
 btnRice.click(function() {
@@ -25,7 +32,10 @@ i_modal.on("click", ".close", function() {
   i_modal.css("display", "none");
 });
 
-// When the user clicks on <span> (x), close the modal
+l_modal.on("click", ".close", function() {
+  l_modal.css("display", "none");
+});
+
 r_modal.on("click", ".close", function() {
   r_modal.css("display", "none");
 });
