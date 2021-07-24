@@ -17,6 +17,12 @@
   .header {
     height: 500px;
   }
+  .left-brace {
+    display: none;
+  }
+  .right-brace {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -26,12 +32,6 @@
 }
 
 @media screen and (max-width: 860px) {
-  .left-brace {
-    display: none;
-  }
-  .right-brace {
-    display: none;
-  }
   .project-image {
     height: 260px;
   }
@@ -107,7 +107,7 @@ p {
 
 .left-brace {
   position: absolute;
-  left: 0;
+  left: 200px;
   z-index: 1;
   height: 350px;
   width: 100px;
@@ -116,7 +116,7 @@ p {
 
 .right-brace {
   position: absolute;
-  right: 0;
+  right: 200px;
   transform: scaleX(-1);
   z-index: 1;
   height: 350px;
@@ -226,7 +226,7 @@ h6 {
 }
 
 .btn-modal:focus {
-  outline: none; 
+  outline: none;
 }
 
 /* The Modal (background) */
@@ -391,6 +391,7 @@ h6 {
 
 .project-image {
   margin: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
 
 .triangle-bottomleft {

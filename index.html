@@ -27,21 +27,21 @@
       <div class="title">
         <table>
           <tr>
-            <td>
+            <!-- <td>
               <div class="marquee-container">
                 <img src="images/news.PNG" class="marquee" />
               </div>
-            </td>
+            </td> -->
             <td>
               <img class="profile" src="images/profile.jpg" alt="Vinay Tummarakota" />
               <h1>Hi! I'm Vinay Tummarakota</h1>
-              <h4>- aspiring data scientist & political analyst -</h4>
+              <h4>- aspiring data scientist & public policy enthusiast -</h4>
             </td>
-            <td>
+            <!-- <td>
               <div class="marquee-container">
                 <img src="images/code.gif" alt="code" class="marquee" />
               </div>
-            </td>
+            </td> -->
           </tr>
         </table>
         <p class="title-icons">
@@ -153,7 +153,7 @@
                     <li>Computational Thinking - <strong>Python</strong></li>
                     <li>Probability and Statistics for Data Science - <strong>R</strong></li>
                     <li>Fundamentals of Computer Engineering - <strong>C</strong></li>
-                    <li>Ordinary Differential Equations & Linear Algebra</li>
+                    <li>Linear Regression - <strong>R</strong></li>
                   </ul>
                 </td>
               </tr>
@@ -169,6 +169,26 @@
     <div id="places" class="white">
       <h2>Where Have I Been?</h2>
       <div class="container">
+        <div class="row job">
+          <div class="col-lg-3">
+            <img class="job-image" src="images/tmobile.jpg" alt="T-Mobile Data Science Internship" />
+          </div>
+          <div class="col-lg-6 job-description">
+            <h4 class="job-header">T-Mobile</h4>
+            <h6 class="job-subheader">Data Science Intern | Bellevue, WA | Summer 2021</h6>
+            <p> Each year, T-Mobile runs "The Datapalooza" - a company-wide hackathon where employees from any background develop
+              machine learning models to tackle data-oriented challenges faced by T-Mobile. Because data scientists in previous
+              Datapaloozas believed the manual process of evaluating ML models was quite tedious, I - and four other interns - were
+              tasked with developing an app capable of automatically generating a litany of statistics indicating the performance of each team's model.
+              Building the app gave me the chance to work with state-of-the-art cloud data processing tools and the opportunity to
+              receive mentorship from T-Mobile data scientists with years of expertise in the field.
+
+          </p>
+          </div>
+          <div class="col-lg-3">
+            <img src="images/tmobile_bubbles.png" alt="Tools Used: Azure Databricks, Microsoft Power Apps, Microsoft SQL Server" class="bubbles"/>
+          </div>
+        </div>
         <div class="row job">
           <div class="col-lg-3">
             <img class="job-image" src="images/cdf.png" alt="Civic Digital Fellowship" />
@@ -194,7 +214,7 @@
             <img class="job-image" src="images/riceapps.png" alt="Rice Apps" />
           </div>
           <div class="col-lg-6 job-description">
-            <h4 class="job-header">RiceApps Hedwig Team</h4>
+            <h4 class="job-header">RiceApps</h4>
             <h6 class="job-subheader">Software Developer | Houston, TX | 2020-2021 School Year </h6>
             <p> RiceApps is a student-run organization that develops web apps for clients near and
               dear to the Rice community. As part of RiceApps, I'm a developer for Hedwig - a mobile-friendly
@@ -274,13 +294,22 @@
       <div id="carouselExampleControls" class="carousel slide projects" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a href="https://github.com/benfirullo/SmoothCriminals"><img class="project-image" src="images/deep.png" alt="Rice Data Science Club Houston Crime Analysis"></a>
+            <a href="https://github.com/vinaytummarakota/datathon-2021"><img class="project-image" src="images/datathon2021.png" alt="Rice Datathon Recommendation Algorithm for Washington DC Government Contractors Project"></a>
           </div>
           <div class="carousel-item">
-            <a href="https://github.com/rknightly/rice-datathon"><img class="project-image" src="images/keras.png" alt="Rice Datathon Divorce Analysis Project"></a>
+            <a href="https://github.com/rice-apps/HedwigUnified"><img class="project-image" src="images/hedwig.png" alt="Hedwig: A React/GraphQL Web Application to Facilitate Online Ordering from Rice University Restaurants"></a>
           </div>
           <div class="carousel-item">
-            <a href="https://github.com/vinaytummarakota/Keeper-App"><img class="project-image" src="images/keeper.gif" alt="Google Keep Replica Designed With React"></a>
+            <a href="https://github.com/vinaytummarakota/genomic-clustering-algorithms"><img class="project-image" src="images/clustering.png" alt="Clustering Analysis of Yeast Gene Expression Data"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/vinaytummarakota/stat410-project"><img class="project-image" src="images/stat410.PNG" alt="Linear Regression Analysis of Lead Levels in Philadelphia, PA"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/rknightly/rice-datathon"><img class="project-image" src="images/datathon2020.png" alt="Rice Datathon Divorce Analysis Project"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="http://prysm-gui.rice.edu/"><img class="project-image" src="images/prysmgui.PNG" alt="Designing a GUI for Climate Proxy System Models"></a>
           </div>
           <div class="carousel-item">
             <a href="https://github.com/sst7/Sibling_Program_Algorithm"><img class="project-image" src="images/sibling.gif" alt="IMSA Student Council Sibling Program Algorithm"></a>
@@ -306,15 +335,13 @@
             <div class="flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
-                  <img class="club-image" src="images/unboxing_politics.PNG" alt="Unboxing Politics">
+                  <img class="club-image" src="images/politics.png" alt="Unboxing Politics">
                 </div>
                 <div class="flip-box-back">
-                  <h4>Unboxing Politics</h4>
-                  <p>I created <a href="https://www.youtube.com/channel/UCLeUeT_RXyQhX4RGxeYy3kg/videos">Unboxing Politics</a> as a way to provide political commentary
-                    on a wide variety of issues: systemic racism, wealth inequality, foreign policy, healthcare, and more. Creating this YouTube channel has taught me the
-                    importance of verifying the credibility of sources, evaluating
-                    competing arguments, and changing
-                    my mind in the face of new information and ideas. </p>
+                  <h4>Public Policy</h4>
+                  <p>Through the <a href="https://docs.google.com/document/d/1OX66jJeHp0L_qAV6PhWmxK2o1Pt9DOUW_3Re9hsKmqM/edit?usp=sharing">Stanford COVID-19 Policy Hackathon</a>, <a href="https://docs.google.com/presentation/d/1R5QrRW9tE5iY1Hu0DYfDcRGys8bN449_wJF4lXGahhM/edit?usp=sharing">Houston Policy Challenge</a>, and my political <a href="https://www.youtube.com/channel/UCLeUeT_RXyQhX4RGxeYy3kg/videos">YouTube channel</a>,
+                    I've enjoyed exploring policy research in criminal justice, economic inequality, and other prominent spaces. Engaging in such political discourse has taught me the
+                    importance of verifying the credibility of sources, evaluating competing arguments, and changing my mind in the face of new information and ideas. </p>
                 </div>
               </div>
             </div>
@@ -326,7 +353,7 @@
                   <img class="club-image" src="images/phils.png" alt="Rice Philharmonics">
                 </div>
                 <div class="flip-box-back">
-                  <h4>Rice Philharmonics</h4>
+                  <h4>A Cappella</h4>
                   <p>The <a href="http://ricephilharmonics.com/about/">Rice Philharmonics</a> (aka "the Phils") is Rice University's
                       Premier Co-Ed A Cappella Group! We perform pop hits, soulful tunes, and
                       a range of other musical genres at events across Texas. I love beatboxing
@@ -344,11 +371,12 @@
                   <img class="club-image" src="images/rds.PNG" alt="Rice Data Science Club">
                 </div>
                 <div class="flip-box-back">
-                  <h4>Rice Data Science Club</h4>
-                  <p><a href="https://datasci.rice.edu/">Rice DataSci</a> (RDS) hosts workshops, panels, and the annual Rice datathon
-                      to provide students with knowledge of data science tools. I'm extremely grateful for
-                      the mentorship of RDS upperclassmen who have helped me gain experience working Python data analytics libraries
-                      and provided me with advice on how to pursue career opportunities in Data Science. </p>
+                  <h4>Data Science</h4>
+                  <p><a href="https://datasci.rice.edu/">Rice DataSci Club</a> (RDS) hosts workshops, panels, and the annual Rice datathon
+                      to provide students with knowledge of data science tools. Through RDS, I've gained familiarity with Python data science
+                      libraries through the Data Education and Exploration Program (<a href="https://datasci.rice.edu/deep/">DEEP</a>),
+                      mentored a group of underclassmen participating in DEEP through a supervised-ML project, and now
+                      lead DEEP's mentorship team as the Internal Vice President! </p>
                 </div>
               </div>
             </div>
